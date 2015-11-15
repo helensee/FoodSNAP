@@ -58,12 +58,7 @@ app.get('/calendar/:zip', function(request,response){
 
 	connection.query("SELECT * FROM company_users where zip='" + zip + "'" , function(err, rows){
 		if(err) throw err;
-		
-		//for(i = 0; i<= rows.length(); i++){
-		//	newrows[i] = rows[i];
-		//newfields = fields;
-		//}
-		
+
 		console.log("done");
 		//connection.end();
 		response.render('pages/calendar', {r:rows});
