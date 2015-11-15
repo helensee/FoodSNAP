@@ -25,12 +25,36 @@
 					<th>
 						City
 					</th>
+					<th>
+						State
+					</th>
+					<th>
+						Branch Representative
+					</th>
+					<th>
+						Phone Number
+					</th>
+					<th>
+						Date
+					</th>
+					<th>
+						Start Time
+					</th>
+					<th>
+						End Time
+					</th>
 				</tr>
 				<% r.forEach(function(r) { %>
 				<tr>
 					<td><%= r.company_name%></td>
 					<td><%= r.address%></td>
 					<td><%= r.city%></td>
+					<td><%= r.state%></td>
+					<td><%= r.first_name%> <%= r.last_name%></td>
+					<td><%= r.phone%></td>
+					<td><%= r.month%>/<%= r.date%>/<%= r.year%></td>
+					<td><%= r.start_time%></td>
+					<td><%= r.end_time%></td>
 				</tr>
 				<% }); %>
 			</table>
