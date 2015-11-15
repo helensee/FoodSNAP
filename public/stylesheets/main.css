@@ -142,18 +142,41 @@ textarea{
 	position: relative;
 }
 
+#footer a{
+	color: #ff80b2;
+	text-decoration: none;
+}
+
+#footer a:hover{
+	color: #aeeaae;
+}
+
+
+
 #calendar{
 	padding-top:100px;
 }
 
+#company-signup a, #volunteer-signup a{
 
 
-#company-login a, #company-signup a, #volunteer-login a, #volunteer-signup a{
 	outline: none;
 	text-decoration: none;
+	color:#ffffff;
     font-family: 'Maven Pro', sans-serif;
 }
 
+
+#company-login a, #volunteer-login a{
+	outline: none;
+	text-decoration: none;
+	color: #ff80b2;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+#company-login a:hover, #volunteer-login a:hover{
+	color: #aeeaae;
+}
 
 .why-sign-up .col-xs-12, .why-sign-up .col-md-4{
 	margin: 30px auto;
