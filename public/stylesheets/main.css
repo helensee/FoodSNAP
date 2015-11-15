@@ -2,6 +2,12 @@
 	.jumbotron .container{	
       margin-top:60px;
 	}
+	
+	#about .container img{
+	margin: 0 auto;
+	padding: 10px;
+}
+
 }
 
 .jumbotron {
@@ -73,9 +79,14 @@ section {
 }
 
 #about .container .col-sm-5, #about .container .col-md-6{
-	margin: 20px;
+	margin-top: 30px;
 	float:right;
 	font-family: 'Maven Pro', sans-serif;
+	padding: 35px;
+}
+
+#about .container img{
+	margin: -13% -20px 50px 15px;
 }
 
 #calendar-home, .why-sign-up{
