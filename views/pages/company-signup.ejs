@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+ <% include ../partials/nav.ejs %>
+	<section id="company-signup" style="padding-top:100px;">
+		<div class="container">
+			<h1>Company Sign-Up</h1>
+				<form style="margin-top: 20px;">
+		  	  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formCompanyName">Company name:</label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyName" placeholder="Company Name" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formCompanyAddress1">Address 1: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddress1" placeholder="Address 1" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formCompanyAddress2">Address 2: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddress2" placeholder="Address 2" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formCompanyAddressCity">City: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddressCity" placeholder="City" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formCompanyAddressState">State: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddressState" placeholder="State" maxlength="2">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formCompanyAddressZipCode">Zip code:</label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddressCountry" placeholder="Zip code" maxlength="5">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formCompanyManager">Manager's name: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyManager" placeholder="Manager's name" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formCompanyManagerEmail">Manager's email: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyManagerEmail" placeholder="Manager's email" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formCompanyManagerPhone">Manager's phone number: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyManagerPhone" placeholder="Manager's phone number" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formUsername">Username: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formUsername" placeholder="Username" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formPassword">Password: </label>
+    			  		<input type="password" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formPassword" placeholder="Password" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formConfirmPassword">Confirm Password: </label>
+    			  		<input type="password" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formConfirmPassword" placeholder="Confirm Password" maxlength="20">
+  			  		</fieldset>
+  			  	
+  			  	<fieldset class="form-group" style="margin-bottom: 0; margin-top: 20px;">
+		  			<label for="specialFoods">Please mark what kinds of dietary needs your company accommodates for</label>
+  			  		 	<div class="checkbox">
+  							<label><input type="checkbox" value="">Vegetarian</label>
+					 	</div>
+					 	<div class="checkbox">
+  							<label><input type="checkbox" value="">Vegan</label>
+					 	</div>
+					 	<div class="checkbox">
+  							<label><input type="checkbox" value="">Kosher</label>
+					 	</div>
+					 	<div class="checkbox">
+  							<label><input type="checkbox" value="">Halal</label>
+					 	</div>
+				</fieldset>
+				
+				
+				<fieldset class="form-group" style="margin-bottom: 0; margin-top: 20px;">
+					<label for="specialFoods">Would you like foodSNAP to provide you volunteers?</label>
+						<div class="radio">
+  							<label><input type="radio" name="optradio">Yes</label>
+						</div>
+						<div class="radio">
+ 						 	<label><input type="radio" name="optradio">No</label>
+						</div>
+				</fieldset>	  		
+  			  		
+  			 	</form>
+				<a type="button" class="btn btn-lg btn-primary" style="margin-top: 20px;" href="">Submit</a>
+			</div>
+		</div>
+	</section>
+	
+<% include ../partials/footer.ejs %>
+</body>
+</html>

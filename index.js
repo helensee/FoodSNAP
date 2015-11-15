@@ -78,5 +78,9 @@ app.get('/volunteer-login', function(request,response){
 	response.render('pages/volunteer-login');
 });
 
+app.get('/company-signup', function(request,response){
+	console.log("This is company signup");
+	response.render('pages/company-signup');
+});
 
 
