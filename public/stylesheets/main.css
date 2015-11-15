@@ -30,25 +30,23 @@
 .navbar-custom{
 	background-color: #333333;
 	border: none;
+	padding: 5px 10px;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li .active{
+	color: #ff80b2;
+}
+
+.navbar-default .navbar-nav>li>a{
+	font-size: 2rem;
+	color:#ffffff;
 	font-family: 'Maven Pro', sans-serif;
-	color: #ffffff;
 }
 
 .navbar-default .navbar-nav>li>a:hover{
 	color: #ff80b2;
-}
-
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-	color: #ff80b2;
 	background-color: transparent;
-}
-
-.navbar-nav>li>a:target {
-   color: #ff80b2;
+	outline: none;
 }
 
 .jumbotron h1{
