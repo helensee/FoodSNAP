@@ -45,10 +45,10 @@ app.listen(app.get('port'), function() {
 });
 
 //get calendar
-app.get('/calendar-home', function(request,response){
+app.get('/calendar', function(request,response){
 	console.log("for calendar");
 	//response.redirect('pages/calendar-home');
-	response.render('pages/calendar-home');
+	response.render('pages/calendar');
 });
 
 /*
