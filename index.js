@@ -46,15 +46,18 @@ app.listen(app.get('port'), function() {
 
 //get calendar
 app.get('/calendar', function(request,response){
-	console.log("for calendar");
+	console.log(request.formGroupZipcodeInput);
+	request.send(request);
 	//response.redirect('pages/calendar-home');
 	response.render('pages/calendar');
 });
 
-/*
-router.post('/FoodSNAP/views/pages/calendar-home.ejs', function (req, res) {
-   console.log("Got a POST request for the homepage");
-   res.send('Hello POST');
-})*/
+//get calendar
+app.get('/calendar/:zip', function(request,response){
+	console.log("Second: " + request.params.zip);
+	//response.redirect('pages/calendar-home');
+	response.render('pages/calendar');
+});
+
 
 
