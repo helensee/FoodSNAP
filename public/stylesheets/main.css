@@ -8,11 +8,13 @@
   background: #aeeaae;
   color: white;
   padding-bottom: 80px; }
-  .jumbotron .btn-primary, #company-login .btn-primary, #company-signup .btn-primary, #volunteer-login .btn-primary{
+  .jumbotron .btn-primary, #company-login .btn-primary, #company-signup .btn-primary, 
+  #volunteer-login .btn-primary, #volunteer-signup .btn-primary{
     background: #ff80b2;
     border: none;
     margin: 10px; 10px 0 10px; }
-    .jumbotron .btn-primary:hover, #company-login .btn-primary:hover, #company-signup .btn-primary:hover, #volunteer-login .btn-primary:hover  {
+    .jumbotron .btn-primary:hover, #company-login .btn-primary:hover, #company-signup .btn-primary:hover, 
+    #volunteer-login .btn-primary:hover, #volunteer-signup .btn-primary:hover {
       background: #ff6666; }
       border: none;
   .jumbotron p {
@@ -64,7 +66,8 @@ section {
 	text-align: center;
 }
 
-#about h1, #contact h1, #company-login h1, #company-signup h1, #volunteer-login h1, #calendar h1{
+#about h1, #contact h1, #company-login h1, #company-signup h1, #volunteer-login h1,
+ #volunteer-signup h1, #calendar h1{
 	font-family: 'Maven Pro', sans-serif;
 	color: #ff80b2;
 }
@@ -85,22 +88,24 @@ section {
 }
 
 #calendar-home .form-group, #company-login .form-group, #company-signup .form-group,
-#volunteer-login .form-group{
+#volunteer-login .form-group, #volunteer-signup .form-group{
 	font-family: 'Maven Pro', sans-serif;
 	font-size: 1.75rem;
 	color: #000000;
+	text-align: center;
 }
 
 
-#company-signup label{
+#company-signup label, #volunteer-signup label{
 	margin-top: 10px;
 	width: 50%;
 	font-size: 1.5rem;
+	text-align: center;
 }
 
 
 #calendar-home .form-control:focus, #company-login .form-control:focus, #company-signup .form-control:focus,
-#volunteer-login .form-control:focus{
+#volunteer-login .form-control:focus, #volunteer-signup .form-control:focus{
 	border-color: #cccccc;
 	outline: none;
 	box-shadow: none;
@@ -134,7 +139,7 @@ section {
 
 
 
-#company-login a, #company-signup a, #volunteer-login a{
+#company-login a, #company-signup a, #volunteer-login a, #volunteer-signup a{
 	outline: none;
 	text-decoration: none;
     font-family: 'Maven Pro', sans-serif;

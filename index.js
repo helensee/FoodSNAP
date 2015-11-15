@@ -83,4 +83,9 @@ app.get('/company-signup', function(request,response){
 	response.render('pages/company-signup');
 });
 
+app.get('/volunteer-signup', function(request,response){
+	console.log("This is volunteer signup");
+	response.render('pages/volunteer-signup');
+});
+
 

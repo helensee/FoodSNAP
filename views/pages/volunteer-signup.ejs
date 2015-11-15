@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+ <% include ../partials/nav.ejs %>
+	<section id="volunteer-signup" style="padding-top:100px;">
+		<div class="container">
+			<h1>Volunteer Sign-Up</h1>
+				<form style="margin-top: 20px;">
+		  	  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formVolunteerName">Volunteer name (first and last):</label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formVolunteerName" placeholder="Volunteer Name" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formVolunteerAddress1">Address 1: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formVolunteerAddress1" placeholder="Address 1" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formVolunteerAddress2">Address 2: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formVolunteerAddress2" placeholder="Address 2" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formVolunteerAddressCity">City: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formVolunteerAddressCity" placeholder="City" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formVolunteerAddressState">State: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formVolunteerAddressState" placeholder="State" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formVolunteerAddressZipCode">Zip code:</label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formVolunteerAddressZipCode" placeholder="Zip code" maxlength="5">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formVolunteerEmail">Email: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formVolunteerEmail" placeholder="Email" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formVolunteerPhone">Phone number: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formVolunteerPhone" placeholder="Phone number" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formVolunteerUsername">Username: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formVolunteerUsername" placeholder="Username" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formVolunteerPassword">Password: </label>
+    			  		<input type="password" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formVolunteerPassword" placeholder="Password" maxlength="20">
+  			  		</fieldset>
+  			  		
+  			  		<fieldset class="form-group" style="margin-bottom: 0">
+		  				<label for="formVolunteerConfirmPassword">Confirm Password: </label>
+    			  		<input type="password" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formVolunteerConfirmPassword" placeholder="Confirm Password" maxlength="20">
+  			  		</fieldset>
+  			  	
+  			  	<fieldset class="form-group" style="margin-bottom: 0; margin-top: 20px;">
+		  			<label for="specialFoods">Please mark what days you are available to volunteer</label>
+  			  		 	<div class="checkbox">
+  							<label><input type="checkbox" value="">Sunday</label>
+					 	</div>
+					 	<div class="checkbox">
+  							<label><input type="checkbox" value="">Monday</label>
+					 	</div>
+					 	<div class="checkbox">
+  							<label><input type="checkbox" value="">Tuesday</label>
+					 	</div>
+					 	<div class="checkbox">
+  							<label><input type="checkbox" value="">Wednesday</label>
+					 	</div>
+					 	<div class="checkbox">
+  							<label><input type="checkbox" value="">Thursday</label>
+					 	</div>
+					 	<div class="checkbox">
+  							<label><input type="checkbox" value="">Friday</label>
+					 	</div>
+					 	<div class="checkbox">
+  							<label><input type="checkbox" value="">Saturday</label>
+					 	</div>
+				</fieldset>  		
+  			  		
+  			 	</form>
+				<a type="button" class="btn btn-lg btn-primary" style="margin-top: 20px;" href="">Submit</a>
+			</div>
+		</div>
+	</section>
+	
+<% include ../partials/footer.ejs %>
+</body>
+</html>
