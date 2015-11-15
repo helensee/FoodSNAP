@@ -59,5 +59,10 @@ app.get('/calendar/:zip', function(request,response){
 	response.render('pages/calendar');
 });
 
+app.get('/company-login', function(request,response){
+	console.log("This is company login");
+	response.render('pages/company-login');
+});
+
 
 

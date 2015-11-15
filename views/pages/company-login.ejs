@@ -5,18 +5,19 @@
 </head>
 
 <body>
-
-	<section id="company-login">
+ <% include ../partials/nav.ejs %>
+	<section id="company-login" style="padding-top:100px;">
 		<div class="container">
 			<h1>Company Login</h1>
 				<form>
 		  	  		<fieldset class="form-group">
 		  				<label for="formCompanyInput"></label>
-    			  		<input type="text" class="form-control" style="margin: 0 auto; margin-top:10px;" id="formCompanyInput" placeholder="Username">
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyInput" placeholder="Username">
   			  		</fieldset>
+  			  		
   			  		<fieldset class="form-group">
 		  				<label for="formCompanyPasswordInput"></label>
-    			  		<input type="password" class="form-control" style="margin: 0 auto; margin-top:10px;" id="formCompanyPasswordInput" placeholder="Password">
+    			  		<input type="password" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyPasswordInput" placeholder="Password">
   			  		</fieldset>
   			 	</form>
 				<a type="button" class="btn btn-lg btn-primary" href="">Submit</a>
