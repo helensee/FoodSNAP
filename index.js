@@ -12,21 +12,6 @@ var connection = mysql.createConnection({
 var app = express();
 var cal = express();
 
-connection.connect(function(err){
-	if(!err){
-		console.log("Database if connected :D \n\n");
-	}else{
-		console.log("Error connecting database D: \n\n");
-	}
-	
-});
-
-connection.query('SELECT 1+1 AS solution FROM company_users', function(err, rows, fields){
-if(err) throw err;
-console.log('The solution is: ', rows[0].solution);
-});
-
-connection.end();
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -55,8 +40,31 @@ app.get('/calendar', function(request,response){
 //get calendar
 app.get('/calendar/:zip', function(request,response){
 	console.log("Second: " + request.params.zip);
+	var zip = request.params.zip;
 	//response.redirect('pages/calendar-home');
 	response.render('pages/calendar');
+	
+	connection.connect(function(err){
+	if(!err){
+		console.log("Database if connected :D \n\n");
+	}else{
+		console.log("Error connecting database D: \n\n");
+	}
+	
+	});
+
+	connection.query("SELECT * FROM company_users where zip='" + zip + "'" , function(err, rows, fields){
+		if(err) throw err;
+		
+		console.log(rows[0]);
+		
+		console.log("done");
+		
+		
+	});
+	
+
+	connection.end();
 });
 
 
