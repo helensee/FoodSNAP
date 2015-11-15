@@ -1,27 +1,102 @@
+@media (max-width: 414px){
+	.jumbotron .container{
+		
+      margin-top:60px;
+	}
+}
+
+
+
 .jumbotron {
-  background: #532F8C;
+  background: #aeeaae;
   color: white;
   padding-bottom: 80px; }
   .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
+    background: #ff80b2;
+    border: none;
+    margin: 10px; 10px 0 10px; }
     .jumbotron .btn-primary:hover {
-      background: #7646c1; }
+      background: #ff6666; }
+      border: none;
   .jumbotron p {
-    color: #d9ccee;
+    color: #333333;
     max-width: 75%;
     margin: 1em auto 2em; }
   .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
+    margin-top: -20px;
+    margin-bottom: 0; }
+    .jumbotron .foodSNAP-logo img {
+      margin-top: 40px;
+      width: 25%;
+      height: auto; }
 
+.navbar-custom{
+	background-color: #333333;
+	border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	color: #ff80b2;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	color: #ff80b2;
+	background-color: transparent;
+}
+
+.jumbotron h1{
+	font-family: 'Maven Pro', sans-serif;
+}
+
+section{
+	padding: 20px;
+}
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#about h1, #contact h1{
+	font-family: 'Maven Pro', sans-serif;
+	color: #ff80b2;
+}
+
+#about .container .col-sm-5, #about .container .col-md-6{
+	margin: 20px;
+	float:right;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+#calendar-home{
+	background-color: #ff80b2;
+}
+
+#calendar-home h1, #footer h5{
+	font-family: 'Maven Pro', sans-serif;
+	color: #ffffff;
+}
+
+#calendar-home .btn-primary {
+    background-color: #ffffff;
+    color: #ff80b2;
+    font-family: 'Maven Pro', sans-serif;
+    border: none;
+    margin: 50px; 10px 0 10px; 
+    border: none;
+}
+
+#calendar-home .btn-primary:hover {
+    background-color: #ff6666;
+    color: #ffffff; 
+    border: none;
+}
+
+#footer{
+	background-color: #000000;
+}
