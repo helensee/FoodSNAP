@@ -6,6 +6,32 @@
 
 <body>
 
+	<script>
+		$(document).ready(function(){
+			var sections = $('section')
+			var nav = $('nav')
+  			var nav_height = nav.outerHeight();
+
+			$(window).on('scroll', function () {
+  			var cur_pos = $(this).scrollTop();
+  
+			});
+
+			nav.find('a').on('click', function () {
+  			var $el = $(this)
+    		var id = $el.attr('href');
+  
+  			$('html, body').animate({
+   			 scrollTop: $(id).offset().top - nav_height
+  			}, 500);
+  			
+  			return false;
+  			
+  			});
+  			
+  		});
+	</script>
+
   <% include ../partials/nav.ejs %>
 	<div id = "header">
 	  <div class="jumbotron text-center">
