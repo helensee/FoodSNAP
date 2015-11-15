@@ -12,6 +12,14 @@ var connection = mysql.createConnection({
 var app = express();
 var cal = express();
 
+connection.connect(function(err){
+	if(!err){
+		console.log("Database if connected :D \n\n");
+	}else{
+		console.log("Error connecting database D: \n\n");
+	}
+	
+});
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -47,14 +55,7 @@ app.get('/calendar/:zip', function(request,response){
 	//response.redirect('pages/calendar-home');
 	//response.render('pages/calendar');
 	
-	connection.connect(function(err){
-		if(!err){
-			console.log("Database if connected :D \n\n");
-		}else{
-			console.log("Error connecting database D: \n\n");
-		}
-		
-	});
+
 
 	//SELECT c.*, e.* FROM FoodSNAP.events e join FoodSNAP.company_users c on e.branch_id = c.branch_id where c.zip = '30071'
 	connection.query("SELECT c.company_name, c.address, c.city, c.state, c.phone, e.* FROM FoodSNAP.events e JOIN FoodSNAP.company_users c ON e.branch_id = c.branch_id WHERE c.zip = '" + zip + "'" , function(err, rows){
@@ -78,14 +79,49 @@ app.get('/volunteer-login', function(request,response){
 	response.render('pages/volunteer-login');
 });
 
-app.get('/company-signup', function(request,response){
+/*app.get('/company-signup', function(request,response){
 	console.log("This is company signup");
 	response.render('pages/company-signup');
-});
+});*/
 
 app.get('/volunteer-signup', function(request,response){
 	console.log("This is volunteer signup");
 	response.render('pages/volunteer-signup');
 });
 
+app.get('/company-signup', function(request, response) {
+	response.render('pages/company-signup');
+	console.log("Company sign-up request submit");
+	console.log(request.body.CompanyName);
+	
+	var company_name = request.body.CompanyName;
+	var addr = request.body.CompanyAddress;
+	var city = request.body.CompanyAddressCity;
+	var state = request.body.CompanyAddressState;
+	var zip = request.body.CompanyAddressZip;
+	var manager_first = request.body.CompanyManagerFirst;
+	var manager_last = request.body.CompanyManagerLast;
+	var phone = request.body.CompanyManagerPhone;
+	var user = request.body.Username;
+	/*var pass = request.body.Password;
+	var confirm_pass = request.body.ConfirmPassword;*/
+	
+	var vegetarian = request.body.specialFoodsVegetarian;
+	var vegan = request.body.specialFoodsVegan;
+	var kosher = request.body.specialFoodsKosher;
+	var halal = request.body.specialFoodsHalal;
+	
+	var volunteer = request.body.optradio;
+	
+	console.log(company_name);
+	
+	connection.query("SELECT max(branch_id) FROM FoodSNAP.company_users", function(err, branch_id){
+		if(err) throw err;
+		connection.query("INSERT INTO company_users VALUES (" + branch_id+1 + ", " + manager_first + ", " + manager_last + ", " + addr + ", " + city + ", " + state + ", " + zip + ", " + phone + ", " + volunteer + ", " + vegetarian + ", " + vegan + ", " + kosher + ", " + halal + ", " + company_name + ", " + user + /*", " + pass + */")", function(err1){
+			if(err1) throw err1;
+			//connection.end();		
+		});
+	});
+	
 
+});

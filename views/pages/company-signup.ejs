@@ -9,80 +9,75 @@
 	<section id="company-signup" style="padding-top:100px;">
 		<div class="container">
 			<h1>Company Sign-Up</h1>
-				<form style="margin-top: 20px;">
+				<form action="company-signup" method="get" style="margin-top: 20px;">
 		  	  		<fieldset class="form-group" style="margin-bottom: 0">
 		  				<label for="formCompanyName">Company name:</label>
-    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyName" placeholder="Company Name" maxlength="20">
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyName" name="CompanyName" placeholder="Company Name" maxlength="20">
   			  		</fieldset>
   			  		
   			  		<fieldset class="form-group" style="margin-bottom: 0">
-		  				<label for="formCompanyAddress1">Address 1: </label>
-    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddress1" placeholder="Address 1" maxlength="20">
-  			  		</fieldset>
-  			  		
-  			  		<fieldset class="form-group" style="margin-bottom: 0">
-		  				<label for="formCompanyAddress2">Address 2: </label>
-    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddress2" placeholder="Address 2" maxlength="20">
+		  				<label for="formCompanyAddress1">Address: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddress" name="CompanyAddress" placeholder="Address" maxlength="20">
   			  		</fieldset>
   			  		
   			  		<fieldset class="form-group" style="margin-bottom: 0">
 		  				<label for="formCompanyAddressCity">City: </label>
-    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddressCity" placeholder="City" maxlength="20">
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddressCity" name="CompanyAddressCity" placeholder="City" maxlength="20">
   			  		</fieldset>
   			  		
   			  		<fieldset class="form-group" style="margin-bottom: 0">
 		  				<label for="formCompanyAddressState">State: </label>
-    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddressState" placeholder="State" maxlength="20">
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddressState" name="CompanyAddressState" placeholder="State" maxlength="20">
   			  		</fieldset>
   			  		
   			  		<fieldset class="form-group" style="margin-bottom: 0">
 		  				<label for="formCompanyAddressZipCode">Zip code:</label>
-    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddressCountry" placeholder="Zip code" maxlength="5">
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyAddressZipCode" name="CompanyAddressZipCode" placeholder="Zip code" maxlength="5">
   			  		</fieldset>
   			  		
   			  		<fieldset class="form-group" style="margin-bottom: 0">
-		  				<label for="formCompanyManager">Manager's name: </label>
-    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyManager" placeholder="Manager's name" maxlength="20">
+		  				<label for="formCompanyManagerFirst">Manager's first name: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyManagerFirst" name="CompanyManagerFirst" placeholder="Manager's name" maxlength="20">
   			  		</fieldset>
   			  		
   			  		<fieldset class="form-group" style="margin-bottom: 0">
-		  				<label for="formCompanyManagerEmail">Manager's email: </label>
-    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyManagerEmail" placeholder="Manager's email" maxlength="20">
+		  				<label for="formCompanyManagerLast">Manager's last name: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyManagerLast" name="CompanyManagerLast" placeholder="Manager's email" maxlength="20">
   			  		</fieldset>
   			  		
   			  		<fieldset class="form-group" style="margin-bottom: 0">
-		  				<label for="formCompanyManagerPhone">Manager's phone number: </label>
-    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyManagerPhone" placeholder="Manager's phone number" maxlength="20">
+		  				<label for="formCompanyManagerPhone">Store phone number: </label>
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formCompanyManagerPhone" name="CompanyManagerPhone" placeholder="Manager's phone number" maxlength="20">
   			  		</fieldset>
   			  		
   			  		<fieldset class="form-group" style="margin-bottom: 0">
 		  				<label for="formUsername">Username: </label>
-    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formUsername" placeholder="Username" maxlength="20">
+    			  		<input type="text" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formUsername" name="Username" placeholder="Username" maxlength="20">
   			  		</fieldset>
   			  		
   			  		<fieldset class="form-group" style="margin-bottom: 0">
 		  				<label for="formPassword">Password: </label>
-    			  		<input type="password" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formPassword" placeholder="Password" maxlength="20">
+    			  		<input type="password" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formPassword" name="Password" placeholder="Password" maxlength="20">
   			  		</fieldset>
   			  		
   			  		<fieldset class="form-group" style="margin-bottom: 0">
 		  				<label for="formConfirmPassword">Confirm Password: </label>
-    			  		<input type="password" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formConfirmPassword" placeholder="Confirm Password" maxlength="20">
+    			  		<input type="password" class="form-control" style="width: 50%; margin: 0 auto; margin-top:10px;" id="formConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password" maxlength="20">
   			  		</fieldset>
   			  	
   			  	<fieldset class="form-group" style="margin-bottom: 0; margin-top: 20px;">
 		  			<label for="specialFoods">Please mark what kinds of dietary needs your company accommodates for</label>
   			  		 	<div class="checkbox">
-  							<label><input type="checkbox" value="">Vegetarian</label>
+  							<label><input type="checkbox" value="" name="specialFoodsVegetarian">Vegetarian</label>
 					 	</div>
 					 	<div class="checkbox">
-  							<label><input type="checkbox" value="">Vegan</label>
+  							<label><input type="checkbox" value="" name="specialFoodsVegan">Vegan</label>
 					 	</div>
 					 	<div class="checkbox">
-  							<label><input type="checkbox" value="">Kosher</label>
+  							<label><input type="checkbox" value="" name="specialFoodsKosher">Kosher</label>
 					 	</div>
 					 	<div class="checkbox">
-  							<label><input type="checkbox" value="">Halal</label>
+  							<label><input type="checkbox" value="" name="specialFoodsHalal">Halal</label>
 					 	</div>
 				</fieldset>
 				
