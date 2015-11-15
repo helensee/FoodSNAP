@@ -8,11 +8,11 @@
   background: #aeeaae;
   color: white;
   padding-bottom: 80px; }
-  .jumbotron .btn-primary, #company-login .btn-primary {
+  .jumbotron .btn-primary, #company-login .btn-primary, #volunteer-login .btn-primary{
     background: #ff80b2;
     border: none;
     margin: 10px; 10px 0 10px; }
-    .jumbotron .btn-primary:hover, #company-login .btn-primary:hover  {
+    .jumbotron .btn-primary:hover, #company-login .btn-primary:hover, #volunteer-login .btn-primary:hover  {
       background: #ff6666; }
       border: none;
   .jumbotron p {
@@ -64,7 +64,7 @@ section {
 	text-align: center;
 }
 
-#about h1, #contact h1, #company-login h1, #volunteer-login h1{
+#about h1, #contact h1, #company-login h1, #volunteer-login h1, #calendar h1{
 	font-family: 'Maven Pro', sans-serif;
 	color: #ff80b2;
 }
@@ -84,7 +84,7 @@ section {
 	color: #ffffff;
 }
 
-#calendar-home .form-group, #company-login .form-group, #volunteer-login .form-control:focus{
+#calendar-home .form-group, #company-login .form-group, #volunteer-login .form-group{
 	font-family: 'Maven Pro', sans-serif;
 	font-size: 1.75rem;
 	color: #ffffff;
@@ -137,4 +137,10 @@ section {
 	font-family: 'Maven Pro', sans-serif;
 }
 
+ 
+
+
+#calendar .table thead {
+   text-align: center;   
+}
 

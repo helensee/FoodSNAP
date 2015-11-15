@@ -14,18 +14,16 @@
 		<div class="container">
 			<h1>Calendar</h1>
 			
-			<table>
-				<tr>
-					<th>
-						Company
-					</th>
-					<th>
-						Address
-					</th>
-					<th>
-						City
-					</th>
-				</tr>
+			<div class="table-responsive">
+				<table class="table">
+				
+					<thead>
+						<tr>
+							<th>Company</th>
+							<th>Address</th>
+							<th>City</th>
+						</tr>
+					</thead>
 				<% r.forEach(function(r) { %>
 				<tr>
 					<td><%= r.company_name%></td>
@@ -33,7 +31,8 @@
 					<td><%= r.city%></td>
 				</tr>
 				<% }); %>
-			</table>
+				</table>
+			</div>
 		</div>
 	</section>
 	
