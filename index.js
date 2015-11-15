@@ -56,10 +56,9 @@ app.get('/calendar/:zip', function(request,response){
 		
 	});
 
-	connection.query("SELECT * FROM company_users where zip='" + zip + "'" , function(err, rows){
+	//SELECT c.*, e.* FROM FoodSNAP.events e join FoodSNAP.company_users c on e.branch_id = c.branch_id where c.zip = '30071'
+	connection.query("SELECT c.company_name, c.address, c.city, c.state, c.phone, e.* FROM FoodSNAP.events e JOIN FoodSNAP.company_users c ON e.branch_id = c.branch_id WHERE c.zip = '" + zip + "'" , function(err, rows){
 		if(err) throw err;
-
-		console.log("done");
 		//connection.end();
 		response.render('pages/calendar', {r:rows});
 		
