@@ -1,4 +1,6 @@
 var express = require('express');
+var router = express.Router();
+
 var mysql = require('mysql');
 var connection = mysql.createConnection({
 	host: 'foodsnap.c7tcssw8uobt.us-east-1.rds.amazonaws.com',
@@ -8,6 +10,7 @@ var connection = mysql.createConnection({
 	database: 'FoodSNAP'
 });
 var app = express();
+var cal = express();
 
 connection.connect(function(err){
 	if(!err){
@@ -40,5 +43,18 @@ app.get('/', function(request, response) {
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
+
+//get calendar
+app.get('/calendar-home', function(request,response){
+	console.log("for calendar");
+	//response.redirect('pages/calendar-home');
+	response.render('pages/calendar-home');
+});
+
+/*
+router.post('/FoodSNAP/views/pages/calendar-home.ejs', function (req, res) {
+   console.log("Got a POST request for the homepage");
+   res.send('Hello POST');
+})*/
 
 
