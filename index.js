@@ -39,38 +39,44 @@ app.get('/calendar', function(request,response){
 
 //get calendar
 app.get('/calendar/:zip', function(request,response){
+	var newrows =[];
+	var newfields = [];
+	var i;
 	console.log("Second: " + request.params.zip);
 	var zip = request.params.zip;
 	//response.redirect('pages/calendar-home');
-	response.render('pages/calendar');
+	//response.render('pages/calendar');
 	
 	connection.connect(function(err){
-	if(!err){
-		console.log("Database if connected :D \n\n");
-	}else{
-		console.log("Error connecting database D: \n\n");
-	}
-	
+		if(!err){
+			console.log("Database if connected :D \n\n");
+		}else{
+			console.log("Error connecting database D: \n\n");
+		}
+		
 	});
 
-	connection.query("SELECT * FROM company_users where zip='" + zip + "'" , function(err, rows, fields){
+	connection.query("SELECT * FROM company_users where zip='" + zip + "'" , function(err, rows){
 		if(err) throw err;
 		
-		console.log(rows[0]);
+		//for(i = 0; i<= rows.length(); i++){
+		//	newrows[i] = rows[i];
+		//newfields = fields;
+		//}
 		
 		console.log("done");
-		
+		//connection.end();
+		response.render('pages/calendar', {r:rows});
 		
 	});
-	
 
-	connection.end();
+	
 });
+
 
 app.get('/company-login', function(request,response){
 	console.log("This is company login");
 	response.render('pages/company-login');
 });
-
 
 
