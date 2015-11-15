@@ -2,14 +2,38 @@
 <html>
 <head>
   <% include ../partials/header.ejs %>
+  <script>
+  
+	</script>
 </head>
 <body>
+
 	 <% include ../partials/nav.ejs %>
 
 	<section id="calendar">
 		<div class="container">
 			<h1>Calendar</h1>
-				<!--calendar stuff goes here-->
+			
+			<table>
+				<tr>
+					<th>
+						Company
+					</th>
+					<th>
+						Address
+					</th>
+					<th>
+						City
+					</th>
+				</tr>
+				<% r.forEach(function(r) { %>
+				<tr>
+					<td><%= r.company_name%></td>
+					<td><%= r.address%></td>
+					<td><%= r.city%></td>
+				</tr>
+				<% }); %>
+			</table>
 		</div>
 	</section>
 	
