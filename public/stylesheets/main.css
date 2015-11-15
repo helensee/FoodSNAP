@@ -1,11 +1,8 @@
 @media (max-width: 414px){
-	.jumbotron .container{
-		
+	.jumbotron .container{	
       margin-top:60px;
 	}
 }
-
-
 
 .jumbotron {
   background: #aeeaae;
@@ -36,6 +33,7 @@
 }
 
 .navbar-default .navbar-nav>li>a {
+	font-family: 'Maven Pro', sans-serif;
 	color: #ffffff;
 }
 
@@ -43,16 +41,21 @@
 	color: #ff80b2;
 }
 
+
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
 	color: #ff80b2;
 	background-color: transparent;
+}
+
+.navbar-nav>li>a:target {
+   color: #ff80b2;
 }
 
 .jumbotron h1{
 	font-family: 'Maven Pro', sans-serif;
 }
 
-section{
+section {
 	padding: 20px;
 }
 
@@ -82,12 +85,27 @@ section{
 	color: #ffffff;
 }
 
+#calendar-home .form-group{
+	margin-top: 50px;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 1.75rem;
+	color: #ffffff;
+}
+
+#calendar-home .form-control:focus{
+	border-color: #cccccc;
+	outline: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
 #calendar-home .btn-primary {
     background-color: #ffffff;
     color: #ff80b2;
     font-family: 'Maven Pro', sans-serif;
     border: none;
-    margin: 50px; 10px 0 10px; 
+    margin: -5px; 10px 0px 10px; 
     border: none;
 }
 
