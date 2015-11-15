@@ -161,7 +161,13 @@ textarea{
 	font-family: 'Maven Pro', sans-serif;
 }
 
-#calendar .table thead {
-   text-align: center;   
+#calendar .table {
+   text-align: center;  
+   font-family: 'Maven Pro', sans-serif; 
 }
 
+#calendar .table th{
+	text-align: center;
+	padding: 10px 0;
+	color: #ff80b2;
+}

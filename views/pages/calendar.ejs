@@ -8,23 +8,13 @@
 </head>
 <body>
 
-	 <% include ../partials/nav.ejs %>
-
 	<section id="calendar">
-		<div class="container">
-			<h1>Calendar</h1>
-			
-			<div class="table-responsive">
-				<table class="table">
+	  <h1>Schedule</h1>
+	   <% include ../partials/nav.ejs %>
+		<div class="table-responsive" style="margin-top: 100px;">			
+			<table class="table">
 				
-					<thead>
-						<tr>
-							<th>Company</th>
-							<th>Address</th>
-							<th>City</th>
-						</tr>
-					</thead>
-			<table>
+			<tbody>
 				<tr>
 					<th>
 						Company
@@ -69,6 +59,7 @@
 				<% }); %>
 				</table>
 			</div>
+		  </div>
 		</div>
 	</section>
 	
