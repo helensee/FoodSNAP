@@ -8,12 +8,12 @@
   background: #aeeaae;
   color: white;
   padding-bottom: 80px; }
-  .jumbotron .btn-primary, #company-login .btn-primary, #company-signup .btn-primary, 
+  .jumbotron .btn-primary, #contact .btn-primary, #company-login .btn-primary, #company-signup .btn-primary, 
   #volunteer-login .btn-primary, #volunteer-signup .btn-primary{
     background: #ff80b2;
     border: none;
     margin: 10px; 10px 0 10px; }
-    .jumbotron .btn-primary:hover, #company-login .btn-primary:hover, #company-signup .btn-primary:hover, 
+    .jumbotron .btn-primary:hover, #contact .btn-primary:hover, #company-login .btn-primary:hover, #company-signup .btn-primary:hover, 
     #volunteer-login .btn-primary:hover, #volunteer-signup .btn-primary:hover {
       background: #ff6666; }
       border: none;
@@ -87,12 +87,17 @@ section {
 	color: #ffffff;
 }
 
-#calendar-home .form-group, #company-login .form-group, #company-signup .form-group,
+
+#calendar-home .form-group, #contact .form-group, #company-login .form-group, #company-signup .form-group,
 #volunteer-login .form-group, #volunteer-signup .form-group{
 	font-family: 'Maven Pro', sans-serif;
 	font-size: 1.75rem;
 	color: #000000;
 	text-align: center;
+}
+
+#calendar-home .form-group{
+	color: #ffffff;
 }
 
 
@@ -104,13 +109,17 @@ section {
 }
 
 
-#calendar-home .form-control:focus, #company-login .form-control:focus, #company-signup .form-control:focus,
+textarea, #contact .form-control:focus, #calendar-home .form-control:focus, #company-login .form-control:focus, #company-signup .form-control:focus,
 #volunteer-login .form-control:focus, #volunteer-signup .form-control:focus{
 	border-color: #cccccc;
 	outline: none;
 	box-shadow: none;
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
+}
+
+textarea{
+	border-radius: 5px;
 }
 
 #calendar-home .btn-primary {
