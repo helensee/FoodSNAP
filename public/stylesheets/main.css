@@ -8,11 +8,11 @@
   background: #aeeaae;
   color: white;
   padding-bottom: 80px; }
-  .jumbotron .btn-primary {
+  .jumbotron .btn-primary, #company-login .btn-primary {
     background: #ff80b2;
     border: none;
     margin: 10px; 10px 0 10px; }
-    .jumbotron .btn-primary:hover {
+    .jumbotron .btn-primary:hover, #company-login .btn-primary:hover  {
       background: #ff6666; }
       border: none;
   .jumbotron p {
