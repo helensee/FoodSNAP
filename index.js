@@ -72,5 +72,11 @@ app.get('/company-login', function(request,response){
 	response.render('pages/company-login');
 });
 
+app.get('/volunteer-login', function(request,response){
+	console.log("This is volunteer login");
+	response.render('pages/volunteer-login');
+});
+
+
 
 

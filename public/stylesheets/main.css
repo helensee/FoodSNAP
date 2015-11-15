@@ -64,7 +64,7 @@ section {
 	text-align: center;
 }
 
-#about h1, #contact h1, #company-login h1{
+#about h1, #contact h1, #company-login h1, #volunteer-login h1{
 	font-family: 'Maven Pro', sans-serif;
 	color: #ff80b2;
 }
@@ -75,22 +75,22 @@ section {
 	font-family: 'Maven Pro', sans-serif;
 }
 
-#calendar-home, #why-sign-up{
+#calendar-home, .why-sign-up{
 	background-color: #ff80b2;
 }
 
-#calendar-home h1, #why-sign-up h1, #footer h5{
+#calendar-home h1, .why-sign-up h1, #footer h5{
 	font-family: 'Maven Pro', sans-serif;
 	color: #ffffff;
 }
 
-#calendar-home .form-group, #company-login .form-group{
+#calendar-home .form-group, #company-login .form-group, #volunteer-login .form-control:focus{
 	font-family: 'Maven Pro', sans-serif;
 	font-size: 1.75rem;
 	color: #ffffff;
 }
 
-#calendar-home .form-control:focus, #company-login .form-control:focus{
+#calendar-home .form-control:focus, #company-login .form-control:focus, #volunteer-login .form-control:focus{
 	border-color: #cccccc;
 	outline: none;
 	box-shadow: none;
@@ -124,14 +124,14 @@ section {
 
 
 
-#company-login a{
+#company-login a, #volunteer-login a{
 	outline: none;
 	text-decoration: none;
     font-family: 'Maven Pro', sans-serif;
 }
 
 
-#why-sign-up .col-xs-12, #why-sign-up .col-md-4{
+.why-sign-up .col-xs-12, .why-sign-up .col-md-4{
 	margin: 30px auto;
 	color: #ffffff;
 	font-family: 'Maven Pro', sans-serif;
